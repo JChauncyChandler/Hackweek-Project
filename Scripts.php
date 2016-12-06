@@ -1,6 +1,6 @@
 <?php
     function conPOST(){
-        $servername = "localhost";
+        $servername = "web2.c7mrwyr3et3m.us-west-2.rds.amazonaws.com,1433";
         $username = "JacksonChandler";
         $password = "jackson11";
 
@@ -13,6 +13,6 @@
         } 
         echo "Connected successfully";
 
-        $query = "INSERT in"
+        $query = "INSERT INTO HIGH_SCORE_TABLE"
     }
 ?>

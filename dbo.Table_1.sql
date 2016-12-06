@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[Table]
+(
+	[Id] VARCHAR(50) NOT NULL PRIMARY KEY, 
+    [Score] INT NOT NULL
+)
