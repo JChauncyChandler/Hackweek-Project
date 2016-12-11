@@ -6,7 +6,7 @@
         
         
         function conPOST($Id, $Score){
-            $servername = "web2.c7mrwyr3et3m.us-west-2.rds.amazonaws.com,1433";
+            $servername = "web2.c7mrwyr3et3m.us-west-2.rds.amazonaws.com";
             $username = "JacksonChandler";
             $password = "jackson11";
 

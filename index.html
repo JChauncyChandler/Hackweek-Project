@@ -48,7 +48,7 @@
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 
                 <div class="table-responsive">
-                    <table class="table table-hover">
+                    <table id="posts" class="table table-hover">
                         <thead>
                             <tr>
                                 <th>Name</th>
@@ -244,7 +244,29 @@
         })
     }
     $(document).onload(function(){
-        
+        $.get("Script2.php");
+        var arrayObjects = <?php echo $json_array; ?>;
+            
+        var t = "";
+        for (var i = 0; i < arrayObjects.length; i++){
+            var tr = "<tr>";
+            tr += "<td>"+arrayObjects[i][0]+"</td>";
+            tr += "<td>"+arrayObjects[i][1]+"</td>";
+            tr += "<td>"+arrayObjects[i][2]+"</td>";
+            tr += "<td>"+arrayObjects[i][3]+"</td>";
+            tr += "<td>"+arrayObjects[i][4]+"</td>";
+            tr += "<td>"+arrayObjects[i][5]+"</td>";
+            tr += "<td>"+arrayObjects[i][6]+"</td>";
+            tr += "<td>"+arrayObjects[i][7]+"</td>";
+            tr += "<td>"+arrayObjects[i][8]+"</td>";
+            tr += "<td>"+arrayObjects[i][9]+"</td>";
+            tr += "<td>"+arrayObjects[i][10]+"</td>";
+            tr += "</tr>";
+            t += tr;
+        }
+        document.getElementById("posts").innerHTML += t;
+            
+             
     })
 </script>
 
